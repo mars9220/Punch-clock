@@ -1,9 +1,7 @@
 from selenium import webdriver
 from time import sleep
 import random
-from selenium.webdriver.common.keys import Keys
-import os
-import datetime
+
 
 url = 'https://my.ntu.edu.tw/attend/ssi.aspx'
 driver = webdriver.Chrome()
@@ -19,8 +17,8 @@ def slp():
 driver.find_element_by_xpath('/html/body/form/div[3]/div[2]/div/div/div/p[1]/a').click()
 slp()
 
-account = 'jueyingchen'
-password = 'Mars9220'
+account = 'user_name'
+password = 'user_pw'
 
 # 網頁登錄
 driver.find_element_by_xpath('/html/body/center/div/div[4]/form/table/tbody/tr[1]/td/input').send_keys(account)
@@ -32,27 +30,5 @@ slp()
 driver.find_element_by_id('btSign').click()
 slp()
 
-
-def clockin():
-    url = 'https://my.ntu.edu.tw/attend/ssi.aspx'
-    driver = webdriver.Chrome()
-    driver.get(url)
-
-
-
-# 得到系统時間
-now_time=datetime.datetime.now()
-# 將時間轉為字串
-now_time = datetime.datetime.strftime(now_time, "%Y-%m-%d %H:%M:%S")
-if clockin:
-    file = open('log.txt', 'a')
-    file.write("\n")
-    file.write("succeed " + now_time)
-    file.close()
-else:
-    file = open('log.txt', 'a')
-    file.write("\n")
-    file.write("fail!!! " + now_time)
-    file.close()
 
 driver.quit()
