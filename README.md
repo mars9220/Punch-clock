@@ -1,6 +1,6 @@
 # Punch clock
 
-## Selenium NTU attendance system auto sign in/out program. 
+### Selenium NTU attendance system auto sign in/out program. 
 <img src="./attend.png">
 
 ## Installation:
@@ -13,7 +13,7 @@
 
 4. Change the **account**, **password** in the **punch_in.py**.  
 
-### Task schedule:
+## Task schedule:
 ### Windows 10
 1. Open **Start**.
 2. Search for**Task schedule**, click the top result
