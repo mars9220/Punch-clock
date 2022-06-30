@@ -11,11 +11,9 @@
 
 3. Download **Chromdriver** and put into the repo dir.
 
-4. Change the **account**, **password** in the **punch_in.py**.
+4. Change the **account**, **password** in the **punch_in.py**.  
 
-
-## Task schedule:
-
+### Task schedule:
 ### Windows 10
 1. Open **Start**.
 2. Search for**Task schedule**, click the top result
