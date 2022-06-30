@@ -1,4 +1,4 @@
-# punch clock
+# Punch clock
 
 ## Selenium NTU attendance system auto sign in/out program. 
 <img src="./attend.png">
