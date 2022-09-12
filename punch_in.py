@@ -3,7 +3,7 @@ from time import sleep
 import random
 
 
-url = 'https://my.ntu.edu.tw/attend/ssi.aspx'
+url = 'https://my.ntu.edu.tw/mattend/ssi.aspx'
 driver = webdriver.Chrome()
 driver.get(url)
 
@@ -21,9 +21,9 @@ account = 'user_name'
 password = 'user_pw'
 
 # 網頁登錄
-driver.find_element_by_xpath('/html/body/center/div/div[4]/form/table/tbody/tr[1]/td/input').send_keys(account)
-driver.find_element_by_xpath('/html/body/center/div/div[4]/form/table/tbody/tr[2]/td/input').send_keys(password)
-driver.find_element_by_xpath('/html/body/center/div/div[4]/form/table/tbody/tr[3]/td[2]/input').click()
+driver.find_element_by_xpath('/html/body/div/div[2]/div[1]/form/div[1]/input').send_keys(account)
+driver.find_element_by_xpath('/html/body/div/div[2]/div[1]/form/div[3]/input').send_keys(password)
+driver.find_element_by_xpath('/html/body/div/div[2]/div[1]/form/button[1]').click()
 slp()
 
 # 點擊簽到
